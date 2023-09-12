@@ -1,0 +1,28 @@
+#description{
+width: 200px;
+height: 200px;
+border-radius: 10px;
+
+}
+#hi{
+    width: 500px;
+    height: 500px;
+}
+#inputs{
+    width: 400px;
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 20px;
+    transition: all;
+}
+
+#file{
+    margin-left: 100px;
+    margin-top: 15px;
+}
+#upload{
+    margin-top: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: blue;
+}
