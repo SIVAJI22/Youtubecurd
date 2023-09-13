@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 import { Navy } from './navbar';
 import { Fragment } from "react";
 import { useParams } from "react-router-dom";
-import e from "cors";
+
 
 
 
