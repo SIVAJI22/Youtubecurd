@@ -36,7 +36,7 @@ const onsumbitimage= async (e)=>{
     e.preventDefault();
     const formdata= new FormData();
     formdata.append('videos',videos);
-const result= await axios.post('http://localhost:5000/video/uploadvideo',formdata,
+const result= await axios.post('https://youtubevideo.onrender.com/video/uploadvideo',formdata,
 {
     headers:{"Content-Type":"multipart/form-data"},
 })
@@ -45,7 +45,7 @@ const handledelete=(id)=>{
   
     
 
-    axios.delete(`http://localhost:5000/video/D${id}`)
+    axios.delete(`https://youtubevideo.onrender.com/video/D${id}`)
 
     .then(function (response){
       console.log(response.data)
@@ -62,7 +62,7 @@ const handledelete=(id)=>{
 
 const getvideo=()=>{
     
-        axios.get('http://localhost:5000/video/videoget').then((response)=>{
+        axios.get('https://youtubevideo.onrender.com/video/videoget').then((response)=>{
             console.log(response.data.data);
     
             setgetvideos(response.data.data)
