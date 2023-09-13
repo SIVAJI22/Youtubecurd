@@ -12,7 +12,7 @@ router.post('/u',(req,res)=>{
 })
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-      cb(null, "../Backend1/frontend2/src/Images")
+      cb(null, "../Youtubecurd/frontend2/src/Images")
     },
     filename: function (req, file, cb) {
       const uniqueSuffix = Date.now();
