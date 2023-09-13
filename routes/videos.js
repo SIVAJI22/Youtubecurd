@@ -22,7 +22,7 @@ res.json({status:e})
 })
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-      cb(null, "..frontend2/src/Videos")
+      cb(null, "./frontend2/src/Videos")
     },
     filename: function (req, file, cb) {
       const uniqueSuffix = Date.now();
