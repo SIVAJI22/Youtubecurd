@@ -35,7 +35,7 @@ const u=()=>{
 
 // const formdata= new FormData();
 // formdata.append('images',images);
-// const result= await axios.put(`http://localhost:5000/image/updating${id}`,formdata,
+// const result= await axios.put(`https://youtubevideo.onrender.com/image/updating${id}`,formdata,
 // {
 // headers:{"Content-Type":"multipart/form-data"},
 // })
@@ -55,7 +55,7 @@ const update=async(id)=>{
     const formdata= new FormData();
 formdata.append('images',images);
 console.log(images);
-const result= await axios.put(`http://localhost:5000/image//updating${id}`,formdata,
+const result= await axios.put(`https://youtubevideo.onrender.com/image//updating${id}`,formdata,
 {
 headers:{"Content-Type":"multipart/form-data"},
 })
@@ -75,7 +75,7 @@ const onsumbitimage= async (e)=>{
     const formdata= new FormData();
     formdata.append('images',images);
     console.log(images);
-const result= await axios.post('http://localhost:5000/image/uploadimage',formdata,
+const result= await axios.post('https://youtubevideo.onrender.com/image/uploadimage',formdata,
 {
     headers:{"Content-Type":"multipart/form-data"},
 })
@@ -84,9 +84,9 @@ const result= await axios.post('http://localhost:5000/image/uploadimage',formdat
 };
 const handledelete= async(id)=>{
   
-    console.log(`http://localhost:5000/image/D${id}`);
+    console.log(`https://youtubevideo.onrender.com/image/D${id}`);
     try{
-      axios.delete(`http://localhost:5000/image/D${id}`).then((response)=>{
+      axios.delete(`https://youtubevideo.onrender.com/image/D${id}`).then((response)=>{
         console.log(response.data.data);
       })
     }
@@ -99,7 +99,7 @@ console.log(err)
 
 const getImage=()=>{
     
-        axios.get('http://localhost:5000/image/imageget').then((response)=>{
+        axios.get('https://youtubevideo.onrender.com/image/imageget').then((response)=>{
             console.log(response.data.data);
     
             setgetimage(response.data.data)
